@@ -1,0 +1,111 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+:root{
+    --color-blue:#3e7fd4;
+}
+body{
+  
+    
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0.5rem 0;
+}
+header h1{
+    margin-left: 0.5rem;
+    
+}
+header h1 span{
+    color: var(--color-blue);
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: cursive;
+}
+.book{
+    width: 100%;
+    height: auto;
+}
+.book p{
+    color: rgb(240, 236, 236);
+    background-color: green;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.8rem;
+   
+}
+.book input{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.5rem;
+}
+.book button{
+    width: 100%;
+    background-color: var(--color-blue);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding:  0.5rem;
+    font-family: cursive;
+    font-weight: bold;
+}
+button:hover{
+    transform: scale(1.01);
+}
+.books{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.books .header--books{
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    align-items: center;
+
+}
+.book--items{
+    width: 100%;
+    height: auto;
+}
+.book--items div:nth-child(odd){
+    background-color: rgb(248, 248, 248);   
+}
+.book--item{
+    padding: 0.6rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+.close:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
